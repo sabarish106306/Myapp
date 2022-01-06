@@ -1,0 +1,19 @@
+.header_container{
+     width: 100%;
+     height: 200px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: blue;
+     text-align: center;
+}
+.head{
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    
+}
+.img{
+    height: 100px;
+}
+.h1{
+    cursor: pointer;
+}
