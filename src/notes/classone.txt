@@ -1,0 +1,22 @@
+import React, { useState } from 'react'
+import "./App.css"
+
+function App() {
+
+const [store,setstore]=useState("karthick")
+
+const handleclick=()=>{
+  setstore("sabari")
+}
+  return (
+    <div className='main_container' >
+       <button onClick={handleclick} >change</button><br/>
+       {
+         store
+       }
+        
+    </div>
+  )
+}
+
+export default App

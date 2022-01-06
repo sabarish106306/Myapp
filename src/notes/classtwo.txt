@@ -1,0 +1,26 @@
+import React, { useState } from 'react'
+
+function App() {
+
+  const [data,setdata]=useState({
+    name:"karthick",
+    age:26,
+    dob:"14-10-1996"
+  })
+const changename=()=>{
+   setdata({
+     ...data,name:"sabari"  
+   })
+}
+  console.log(data);
+  return (
+    <div>
+      <button onClick={changename} >click</button>
+         {
+           data.name
+         }
+    </div>
+  )
+}
+
+export default App
