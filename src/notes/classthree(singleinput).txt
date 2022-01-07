@@ -1,0 +1,28 @@
+import React, { useState } from 'react'
+
+function Content() {
+   const [inputchange,setinputchange]=useState()
+   const [inputval,setinput]=useState()
+
+
+   const handleclick=()=>{
+     setinput(inputchange)
+   }
+
+   const handlechange=(event)=>{
+        setinputchange(event.target.value)
+   }
+    
+    return (
+        <div>
+            <div><input type="text" placeholder='Enter Your Name' onChange={handlechange} /></div>
+            <button onClick={handleclick} >click</button>
+            {
+                inputval
+            }
+            
+        </div>
+    )
+}
+
+export default Content
